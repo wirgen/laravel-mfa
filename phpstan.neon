@@ -1,0 +1,14 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - src
+    parallel:
+        processTimeout: 300.0
+    level: 5
+
+    ignoreErrors:
+        - '#Unsafe usage of new static#'
+
+    checkMissingIterableValueType: false
